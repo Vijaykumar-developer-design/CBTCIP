@@ -1,0 +1,30 @@
+import React, { useState } from "react";
+
+function TaskForm({ addTask }) {
+  const [task, setTask] = useState("");
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (task.trim()) {
+      addTask(task);
+      setTask("");
+    }
+  };
+
+  return (
+    <form className="form-contianer" onSubmit={handleSubmit}>
+      <input
+        className="input-element"
+        type="text"
+        value={task}
+        onChange={(e) => setTask(e.target.value)}
+        placeholder="Add a new task..."
+      />
+      <button className="add-task-btn" type="submit">
+        Add Task
+      </button>
+    </form>
+  );
+}
+
+export default TaskForm;

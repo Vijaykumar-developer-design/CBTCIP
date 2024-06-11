@@ -1,0 +1,147 @@
+.heading {
+  color: #03fcec;
+  font-weight: 400;
+  font-family: "Courier New", Courier, monospace;
+}
+.app-bg {
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: radial-gradient(#58ada8, blue);
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #6af7e2;
+  border: outset;
+  border-radius: 4px;
+}
+.city-input {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  background-color: inherit;
+  outline: none;
+}
+.icon {
+  font-size: 22px;
+  color: #374d75;
+  margin: 5px;
+}
+.search-icon {
+  font-size: 22px;
+  color: blue;
+  margin: 5px;
+  cursor: pointer;
+}
+.weather-card {
+  padding: 10px;
+  border: 2px solid gray;
+  border-radius: 5px;
+  width: 60%;
+  background-color: transparent;
+}
+.sun-icon {
+  color: #ffe87c;
+  font-size: 150px;
+}
+.temperature {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.humidity {
+  display: flex;
+  align-items: center;
+  width: 48%;
+  justify-content: space-evenly;
+  border: outset;
+  color: #ffe87c;
+}
+.humidity-icon {
+  font-size: 100px;
+  color: #8cf9ff;
+}
+.humidity-wind-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.wind {
+  display: flex;
+  align-items: center;
+  width: 48%;
+  justify-content: space-evenly;
+  border: outset;
+  color: #ffe87c;
+}
+.wind-icon {
+  font-size: 100px;
+  color: #8cf9ff;
+}
+.error-color {
+  color: #f8fc03;
+  font-size: 20px;
+}
+.error-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.temp {
+  font-size: 10px;
+}
+@media screen and (max-width: 576px) {
+  .temperature {
+    font-size: 15px;
+  }
+  .weather-card {
+    width: 90%;
+  }
+  .wind-icon {
+    font-size: 40px;
+  }
+  .humidity-icon {
+    font-size: 40px;
+  }
+  .sun-icon {
+    font-size: 120px;
+  }
+  .degrees {
+    font-size: 20px;
+  }
+  .wind {
+    font-size: 10px;
+  }
+  .humidity {
+    font-size: 10px;
+  }
+  .wind {
+    width: 45%;
+  }
+  .humidity {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .wind-icon {
+    font-size: 60px;
+  }
+  .humidity-icon {
+    font-size: 80px;
+  }
+  .wind {
+    font-size: 16px;
+  }
+  .humidity {
+    font-size: 16px;
+  }
+  .humidity-wind-container {
+    margin-top: 10px;
+  }
+}
